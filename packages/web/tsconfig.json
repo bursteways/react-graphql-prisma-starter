@@ -1,0 +1,76 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "src": [
+        "src"
+      ],
+      "src/*": [
+        "src/*"
+      ],
+      "components": [
+        "components"
+      ],
+      "components/*": [
+        "components/*"
+      ],
+      "containers": [
+        "containers"
+      ],
+      "containers/*": [
+        "containers/*"
+      ],
+      "graphql": [
+        "graphql"
+      ],
+      "graphql/*": [
+        "graphql/*"
+      ],
+      "hooks": [
+        "hooks"
+      ],
+      "hooks/*": [
+        "hooks/*"
+      ],
+      "store": [
+        "store"
+      ],
+      "store/*": [
+        "store/*"
+      ]
+    },
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ],
+    "jsx": "preserve",
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "build",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache"
+  ]
+}

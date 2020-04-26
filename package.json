@@ -1,0 +1,15 @@
+{
+  "name": "my-app-prisma-apollo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "author": "bursteways <sburke0708@gmail.com>",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "start": "npm-run-all --parallel start:web start:api",
+    "start:web": "cd packages/web && yarn dev",
+    "start:api": "cd packages/api && yarn dev"
+  }
+}
+
