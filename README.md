@@ -39,7 +39,7 @@ $ npm install -g prisma
 $ primsa login
 ``` 
 - #### Initialize Prisma
-###### packages/api/src
+###### packages/api
 ```bash
 $ prisma init
 -- DO NOT GENERATE PRISMA CLIENT IF ASKED DURING CLI 

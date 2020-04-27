@@ -2,7 +2,7 @@
 ## Remove these comments when done.
 ###
 ### 1. Copy the generated "endpoint" into your own `variables.env`.
-### 2. Replace this file into your `prisma.yml`.
+### 2. Replace the contents below this file in `./src/prisma.yml`.
 ### 3. Delete this file.
 
 endpoint: ${env:PRISMA_ENDPOINT}

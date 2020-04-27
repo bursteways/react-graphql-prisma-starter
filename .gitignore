@@ -3,3 +3,4 @@
 /node_modules/
 /packages/api/node_modules/
 /packages/web/node_modules/
+*.log

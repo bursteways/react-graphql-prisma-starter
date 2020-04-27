@@ -3,7 +3,7 @@
 const { Prisma } = require('prisma-binding');
 
 const db = new Prisma({
-  typeDefs: 'src/generated/prisma.graphql',
+  typeDefs: 'generated/index',
   endpoint: process.env.PRISMA_ENDPOINT,
   secret: process.env.PRISMA_SECRET,
   debug: true, // log to queries/mutations to console
