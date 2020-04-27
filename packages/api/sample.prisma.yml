@@ -1,0 +1,18 @@
+## 💥 Action item!
+## Remove these comments when done.
+###
+### 1. Copy the generated "endpoint" into your own `variables.env`.
+### 2. Replace this file into your `prisma.yml`.
+### 3. Delete this file.
+
+endpoint: ${env:PRISMA_ENDPOINT}
+
+# Prisma may generate a `datamodel.graphql` instead. Change if necessary.
+datamodel: datamodel.prisma
+
+# TODO: Uncomment this before production build.
+#secret: ${env:PRISMA_SECRET}
+
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma

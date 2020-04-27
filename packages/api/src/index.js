@@ -10,5 +10,5 @@ server.start({
     origin: process.env.FRONTEND_URL,
   }
 }, details => {
-  console.log(`🚀 Server is running on port http://localhost:{details.port}`)
+  console.log(`🚀 Server is running on port http://localhost:${details.port}`)
 });
