@@ -17,15 +17,15 @@ The purpose of this app is to help get up and running quickly using modern techn
 | Material UI |
 | StyledComponents |
 
-| Mobile        |
+| Mobile (coming soon)        |
 | ------------- |
 | React Native      |
 
 ## Getting started
 
 ### Backend setup:
-- #### Globally install Prisma
-###### packages/api
+###### In directory => packages/api
+1. #### Globally install Prisma
 ```bash
 $ yarn --global prisma
 ```
@@ -34,43 +34,40 @@ or
 $ npm install -g prisma
 ```
 
-- #### Grant permission to Prisma
+2. #### Grant permission to Prisma
 ```bash
 $ primsa login
 ``` 
-- #### Initialize Prisma
-###### packages/api
+3. #### Initialize Prisma
 ```bash
 $ prisma init
--- DO NOT GENERATE PRISMA CLIENT IF ASKED DURING CLI 
-```
-*Note:* To get started you may want to use the demo database that comes with Prisma. It's a great way to get up and running.
+-- Note: To get started you may want to use the demo database that comes with Prisma. It's a great way to get up and running.
 For production, it is recommended to set up a full database.
+-- Choose TS Prisma-client bindings when prompted in CLI
+```
 
 The CLI should have created 2 files at the root of `/packages/api`:
 - datamodel.prisma
 - prisma.yml
 
-- #### Set up your environment variables
-###### /packages/api/
-Follow the `Action Item` in `sample.prisma.yml`.
+4. #### Set up your environment variables
+- Follow the `Action Item` in `sample.prisma.yml`.
 
-- #### Deploy the Prisma schema
-###### /packages/api
+5. #### Deploy the Prisma schema
 ```bash
 $ yarn run deploy
 ```
 
 ### Frontend setup:
-- Install all the project's dependencies.
-###### / (Root of the project)
+###### In directory => / (Root of the project)
+1. Install all the project's dependencies.
 ```bash
 $ yarn install
 ```
-Because this is a monorepo, we use `yarn workpaces` to handle the dependencies.
+Because this is a monorepo, we use `yarn workpaces` to handle all dependencies.
 
-### Start the app
-###### /
+### Start the app:
+###### In directory => / (Root of the project)
 ```bash
 $ yarn start
 ```
